@@ -6,9 +6,9 @@ terraform {
     }
   }
     backend "s3" {
-    bucket = "digger-s3backend-demo-aws-multiacc-prod"              # Change if a different S3 bucket name was used for the backend 
+    bucket = "digger-s3backend-demo-aws-multiacc-dev"              # Change if a different S3 bucket name was used for the backend 
     /* Un-comment to use DynamoDB state locking
-    dynamodb_table = "digger-locktable-demo-aws-multiacc-prod"      # Change if a different DynamoDB table name was used for backend
+    dynamodb_table = "digger-locktable-demo-aws-multiacc-dev"      # Change if a different DynamoDB table name was used for backend
     */
     key    = "terraform/state"
     region = "us-east-1"

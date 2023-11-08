@@ -13,12 +13,12 @@ provider "aws" {
 
 variable "bucket_id" {
   type = string
-  default = "digger-s3backend-demo-aws-multiacc"
+  default = "digger-s3backend-demo-aws-multiacc-dev"
 }
 
 variable "dynamo_lock_table_id" {
   type = string
-  default = "digger-locktable-demo-aws-multiacc"
+  default = "digger-locktable-demo-aws-multiacc-dev"
 }
 
 resource "aws_s3_bucket" "example" {
